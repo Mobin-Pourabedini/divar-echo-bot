@@ -1,4 +1,5 @@
 import os
+from http.cookiejar import debug
 
 from kenarBot import KenarBot
 from kenarBot.types import ChatBotMessage
@@ -18,4 +19,4 @@ def handle_hello(chatbot_message: ChatBotMessage):
 
 if __name__ == "__main__":
     # Start the bot
-    bot.run()
+    bot.run(debug=True)
