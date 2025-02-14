@@ -8,6 +8,9 @@ using divar openapi that transforms your messages into ASCII cow art!
 Powered By [Kenar Divar](https://divar.ir/kenar) 🚀
 ## 🎬 Demo & Showcase
 
+### 👀 See it for yourself
+🤖 [Start Bot](https://divar.ir/chat/addon_tin-glimmer-sage) 🤖
+
 ### 🎯 See it in action!
 Let the cow speak for itself! 🐄:
 
