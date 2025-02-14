@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 80
 
 # Run main.py when the container launches
-CMD ["python", "main.py"]
+CMD ["gunicorn", "--workers", "4", "--bind", "0.0.0.0:80", "src:application"]
