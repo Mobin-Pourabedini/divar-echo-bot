@@ -35,7 +35,10 @@ def kenar_cow_say(text: str) -> str:
 @bot.message_handler()
 def handle_hello(chatbot_message: ChatBotMessage):
     # Send a response back to the same conversation
-    bot.send_message(chatbot_message.conversation_id, kenar_cow_say(chatbot_message.message))
+    text = chatbot_message.message
+    if len(text) > 22:
+        text = "الان برا یه گاو جمله\nبزرگی نیس به نظرت؟"
+    bot.send_message(chatbot_message.conversation_id, kenar_cow_say(text))
 
 if __name__ == "__main__":
     bot.run()
